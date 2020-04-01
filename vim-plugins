@@ -1,0 +1,102 @@
+-------------------------------------------------------------------------------
+	install cinnamon desktop
+-------------------------------------------------------------------------------
+
+yum update
+init 6
+
+yum install epel-release
+yum groupinstall "Server with GUI"
+yum install cinnamon
+systemctl get-default
+
+# change to graphical.target if not already set
+systemctl set-default graphical.target
+
+# reboot, or change to target now
+systemctl isolate graphical.target
+
+-------------------------------------------------------------------------------
+	install vim plugins
+-------------------------------------------------------------------------------
+
+# create two directories in ~/.vim and install the pathogen package
+
+	mkdir -p ~/.vim/autoload ~/.vim/bundle
+	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+# add the following to ~/.vimrc file
+
+	vim ~/.vimrc
+
+	execute pathogen#infect()
+	syntax on
+	filetype plugin on
+	set laststatus=2
+	set t_Co=256
+
+	# filetype plugin indent on
+
+# "install" plugins to ~/.vim/bundle
+
+	cd ~/.vim/bundle
+
+	git clone https://github.com/vim-airline/vim-airline
+	git clone https://github.com/vim-airline/vim-airline-themes
+	git clone https://github.com/flazz/vim-colorschemes
+	git clone https://tpope.io/vim/fugitive.git
+	git clone https://github.com/airblade/vim-gitgutter
+	git clone https://github.com/preservim/nerdtree.git
+
+# you'll need a patched font for this one:
+	git clone https://github.com/ryanoasis/vim-devicons.git
+
+# single/additional colorschemes
+	git clone https://github.com/chriskempson/base16-vim.git
+	git clone https://github.com/Mizux/vim-colorschemes ./Mizux
+	git clone https://github.com/gosukiwi/vim-atom-dark
+
+	git clone https://github.com/arcticicestudio/nord-vim
+
+# meh
+	git clone https://github.com/sainnhe/sonokai
+	git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
+	git clone https://github.com/thaerkh/vim-indentguides
+	git clone https://github.com/nathanaelkane/vim-indent-guides.git
+
+-------------------------------------------------------------------------------
+
+# keep in mind, all 3 of these accomplish the same thing:
+
+	cd ~/.vim/bundle
+	git clone https://github.com/vim-airline/vim-airline
+
+	cd ~/.vim/bundle && git clone https://github.com/vim-airline/vim-airline
+
+	git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle
+
+# also, some URLs terminate with .git, others don’t
+
+-------------------------------------------------------------------------------
+
+# vim expects you to run :helptags on each directory with documentation in it
+# for example:
+
+	vim
+	:helptags ~/.vim/bundle/<package>/doc
+
+# pathogen provides a :Helptags command that does this on every directory in your ’runtimepath’
+
+	vim
+	:Helptags
+
+-------------------------------------------------------------------------------
+	update plugins
+-------------------------------------------------------------------------------
+
+example:
+
+cd ~/.vim/bundle/fugitive
+git pull
+
+-------------------------------------------------------------------------------
