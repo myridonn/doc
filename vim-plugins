@@ -48,6 +48,18 @@ systemctl isolate graphical.target
 	git clone https://github.com/airblade/vim-gitgutter
 	git clone https://github.com/preservim/nerdtree.git
 
+# new
+	git clone http://github.com/sjl/gundo.vim ~/.vim/bundle/gundo
+
+	add the following to your ~/.vimrc:
+
+		map <F5> :GundoToggle<CR>
+		let g:gundo_prefer_python3=1
+		let g:gundo_right=1
+		let g:gundo_preview_bottom=1
+		let g:gundo_map_move_older="<UP>"
+		let g:gundo_map_move_newer="<DOWN>"
+
 # you'll need a patched font for this one:
 	git clone https://github.com/ryanoasis/vim-devicons.git
 
