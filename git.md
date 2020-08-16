@@ -1,5 +1,7 @@
 # git
 
+notes for setting up git/github
+
 -------------------------------------------------------------------------------
 
 	file:	git
@@ -8,6 +10,7 @@
 
 -------------------------------------------------------------------------------
 
+```sh
 git config --global user.name myridonn
 git config --global user.email myridonn@gmail.com
 git config --global --list
@@ -18,6 +21,7 @@ git init
 touch .vimrc
 git add .vimrc
 git commit -m 'Initial revision'
+```
 
 	( create repository on github before proceeding )
 
