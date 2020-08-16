@@ -1,3 +1,5 @@
+# git
+
 -------------------------------------------------------------------------------
 
 	file:	git
@@ -63,6 +65,25 @@ Everything up-to-date
 
 # if you want to switch back to https:
 git remote set-url dotfiles https://github.com/myridonn/dotfiles
+
+-------------------------------------------------------------------------------
+	procedure
+-------------------------------------------------------------------------------
+
+# after globals have been established and public key has been added to github
+mkdir ~/dotfiles
+cd !$
+git remote add dotfiles git@github.com:myridonn/dotfiles.git
+git remote -v
+git pull dotfiles master
+
+-------------------------------------------------------------------------------
+	changes
+-------------------------------------------------------------------------------
+
+git add .
+git commit -a
+git push
 
 -------------------------------------------------------------------------------
 	other info
