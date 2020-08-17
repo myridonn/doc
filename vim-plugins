@@ -48,7 +48,26 @@ systemctl isolate graphical.target
 	git clone https://github.com/airblade/vim-gitgutter
 	git clone https://github.com/preservim/nerdtree.git
 
+	git clone https://github.com/relastle/bluewery.vim.git
+	git clone https://github.com/ludokng/vim-odyssey
+	git clone https://github.com/wdhg/dragon-energy
+	git clone https://github.com/fielding/vice
+	git clone https://github.com/Rigellute/rigel
+	git clone https://github.com/xstrex/FireCode.vim
+	git clone https://github.com/fatih/molokai
+	git clone https://github.com/agreco/vim-citylights
+
 # new
+	# yank ring
+	git clone https://github.com/vim-scripts/YankRing.vim
+
+	# histwin 2020-07-25
+	git clone https://github.com/chrisbra/histwin.vim
+
+	# syntastic 2020-07-19
+	git clone --depth=1 https://github.com/vim-syntastic/syntastic.git
+
+
 	git clone http://github.com/sjl/gundo.vim ~/.vim/bundle/gundo
 
 	add the following to your ~/.vimrc:
