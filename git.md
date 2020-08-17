@@ -110,6 +110,5 @@ git pull dotfiles master
 >other info
 https://guides.github.com/activities/hello-world/
 
-windows:	msysgit
-		gitextensions
+windows applications: msysgit gitextensions
 -------------------------------------------------------------------------------
