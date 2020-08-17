@@ -1,5 +1,5 @@
 # notes for setting up git(hub)
-begin the process on the github site.  once you have addeed your ssh public key and created the initial repository, you can clone it to your local device
+begin the process on the github site.  once you have added your ssh public key and created the initial repository, you can clone it to your local device
 
 ## setup github
 > add ssh key
@@ -26,32 +26,34 @@ begin the process on the github site.  once you have addeed your ssh public key 
 - select clipboard icon to right of 'git@github.com' string
   ( you'll get a string like this:  git@github.com:myridonn/process.git )
 
-
 ## on your local device
-### setup global variables
+> setup global variables
 ```sh
 git config --global user.name myridonn
 git config --global user.email myridonn@gmail.com
 git config --global --list
 ```
 
-### clone repository
+> clone existing repository
 ```sh
 cd ~/git
 git clone git@github.com:myridonn/process.git
 ```
 
+> to create a new repository
+create and initialize directory
 ```sh
 mkdir ~/dotfiles
 cd ~/dotfiles
 git init
-
+```
+create new file
+```sh
 touch .vimrc
 git add .vimrc
 git commit -m 'Initial revision'
 ```
-
-setup ssh key access
+push file to github
 ```sh
 git remote add dotfiles git@github.com:myridonn/dotfiles.git
 git push -u dotfiles master
