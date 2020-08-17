@@ -73,7 +73,6 @@ push <filename>
 ```
 
 ```sh
--------------------------------------------------------------------------------
 # https
 git remote add dotfiles https://github.com/myridonn/dotfiles
 git push -u dotfiles master
@@ -83,7 +82,6 @@ git push -u dotfiles master
 # ssh
 git remote add dotfiles git@github.com:myridonn/dotfiles.git
 git push -u dotfiles master
--------------------------------------------------------------------------------
 ```
 
 git pull dotfiles master
@@ -100,36 +98,18 @@ git remote -v
 git remote set-url dotfiles https://github.com/myridonn/dotfiles
 ```
 
--------------------------------------------------------------------------------
-	procedure
--------------------------------------------------------------------------------
-
-# after globals have been established and public key has been added to github
+after globals have been established and public key has been added to github
+```sh
 mkdir ~/dotfiles
 cd !$
 git remote add dotfiles git@github.com:myridonn/dotfiles.git
 git remote -v
 git pull dotfiles master
+```
 
--------------------------------------------------------------------------------
-	changes
--------------------------------------------------------------------------------
-
-git add .
-git commit -a
-git push
-
--------------------------------------------------------------------------------
-	other info
--------------------------------------------------------------------------------
-
+>other info
 https://guides.github.com/activities/hello-world/
 
--------------------------------------------------------------------------------
-	installing
--------------------------------------------------------------------------------
-
-	windows:	msysgit
-			gitextensions
-
+windows:	msysgit
+		gitextensions
 -------------------------------------------------------------------------------
