@@ -1,7 +1,8 @@
 # notes for setting up git(hub)
+begin the process on the github site.  once you have addeed your ssh public key and created the initial repository, you can clone it to your local device
 
 ## setup github
-### add ssh key
+> add ssh key
 - goto settings  ( select 'Settings' from icon menu in top right corner )
 - select 'SSH and GPG keys'
 - select 'New SSH key'
@@ -10,7 +11,7 @@
 - select 'Add SSH key'
 - enter github password  ( if prompted )
 
-### add repository
+> add repository
 - go to repositories  ( select 'Your repositories' from icon menu in top right corner )
 - select 'New'  ( green box in upper right corner )
 
