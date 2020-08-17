@@ -86,14 +86,14 @@ git push -u dotfiles master
 
 git pull dotfiles master
 
-# after you add rsa public key to github account  ( check, switch to ssh, check again )
+after you add rsa public key to github account  ( check, switch to ssh, check again )
 ```sh
 git remote -v
 git remote set-url dotfiles git@github.com:myridonn/dotfiles
 git remote -v
 ```
 
-# if you want to switch back to https:
+if you want to switch back to https:
 ```sh
 git remote set-url dotfiles https://github.com/myridonn/dotfiles
 ```
