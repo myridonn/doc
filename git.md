@@ -65,8 +65,8 @@ this can be done all in one line
 git add git.md ; git commit -m 'more' ; git push
 ```
 
+```sh
 -------------------------------------------------------------------------------
-
 # https
 git remote add dotfiles https://github.com/myridonn/dotfiles
 git push -u dotfiles master
@@ -76,8 +76,8 @@ git push -u dotfiles master
 # ssh
 git remote add dotfiles git@github.com:myridonn/dotfiles.git
 git push -u dotfiles master
-
 -------------------------------------------------------------------------------
+```
 
 git pull dotfiles master
 
