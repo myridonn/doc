@@ -1,23 +1,16 @@
 # notes for setting up git/github
 
-### create ssh public key
-```sh
-cat ~/.ssh/id_rsa.pub
-```
-
 ### setup github
-- login to github
-
 add ssh key
-- goto settings
+- goto settings  ( select 'Settings' from icon menu in top right corner )
 - select 'SSH and GPG keys'
 - select 'New SSH key'
 - Title: enter hostname and/or username
-- Key: copy the entire text of the public key
+- Key: copy the entire text of the public key  ( cat ~/.ssh/id_rsa.pub )
 - select 'Add SSH key'
 
 add repository
-- go to repositories
+- go to repositories  ( select 'Your repositories' from icon menu in top right corner )
 - select 'New'  ( green box in upper right corner )
 
 	- repository name: dotfiles
