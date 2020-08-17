@@ -41,8 +41,8 @@ git clone git@github.com:myridonn/process.git
 ```
 
 > to create a new repository
-create and initialize directory
 ```sh
+# create and initialize directory
 mkdir ~/dotfiles
 cd ~/dotfiles
 git init
