@@ -60,9 +60,16 @@ git push -u dotfiles master
 ```
 
 this can be done all in one line
-
 ```sh
 git add git.md ; git commit -m 'more' ; git push
+```
+or create an alias ( with a generic commit message )
+```sh
+alias push 'git add \!:1 git commit -m 'modified'; git push'
+```
+and run this:
+```sh
+push <filename>
 ```
 
 ```sh
