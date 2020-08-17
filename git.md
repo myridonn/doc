@@ -17,8 +17,15 @@ git init
 
 touch .vimrc
 git add .vimrc
-git commit -m 'Initial revision'
+gitgit  commit -m 'Initial revision'
 ```
+
+this can be done all in one line
+
+```sh
+git add git.md ; git commit -m 'more' ; git push
+```
+
 
 setup reposity on github before proceeding - dotfiles
 
