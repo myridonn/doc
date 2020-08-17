@@ -1,21 +1,23 @@
 # git
+-------------------------------------------------------------------------------
 
-notes for setting up git/github
+	notes for setting up git/github
 
 -------------------------------------------------------------------------------
 
-	file:	git
-
-	desc:	@(#) notes for setting up git and github
-
--------------------------------------------------------------------------------
+setup global varaibles
 
 ```sh
 git config --global user.name myridonn
 git config --global user.email myridonn@gmail.com
 git config --global --list
+```
 
-cd dotfiles
+initialize local directory/repository
+
+```sh
+mkdir ~/dotfiles
+cd ~/dotfiles
 git init
 
 touch .vimrc
@@ -23,16 +25,12 @@ git add .vimrc
 git commit -m 'Initial revision'
 ```
 
-	( create repository on github before proceeding )
+setup reposity on github before proceeding - dotfiles
 
--------------------------------------------------------------------------------
-
-vim vim-plugins
-git init
-git add vim-plugins
-git commit -m "first commit"
-git remote add doc git@github.com:myridonn/doc.git
-git push -u doc master
+```sh
+git remote add dotfiles git@github.com:myridonn/dotfiles.git
+git push -u dotfiles master
+```
 
 -------------------------------------------------------------------------------
 
