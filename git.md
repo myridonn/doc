@@ -1,15 +1,16 @@
-# notes for setting up git/github
+# notes for setting up git(hub)
 
-### setup github
-add ssh key
+## setup github
+### add ssh key
 - goto settings  ( select 'Settings' from icon menu in top right corner )
 - select 'SSH and GPG keys'
 - select 'New SSH key'
 - Title: enter hostname and/or username
 - Key: copy the entire text of the public key  ( cat ~/.ssh/id_rsa.pub )
 - select 'Add SSH key'
+- enter github password  ( if prompted )
 
-add repository
+### add repository
 - go to repositories  ( select 'Your repositories' from icon menu in top right corner )
 - select 'New'  ( green box in upper right corner )
 
@@ -20,21 +21,24 @@ add repository
 	- select 'Create repository'  ( green box near bottom of page )
 
 - select 'Code'  ( green box in middle of screen )
+- select 'Use SSH' if it says 'Clone with HTTPS'
 - select clipboard icon to right of 'git@github.com' string
+  ( you'll get a string like this:  git@github.com:myridonn/process.git )
 
-### on your local device
 
-```sh
-git clone
-
-setup global variables
+## on your local device
+### setup global variables
 ```sh
 git config --global user.name myridonn
 git config --global user.email myridonn@gmail.com
 git config --global --list
 ```
 
-initialize local directory/repository
+### clone repository
+```sh
+cd ~/git
+git clone git@github.com:myridonn/process.git
+```
 
 ```sh
 mkdir ~/dotfiles
