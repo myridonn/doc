@@ -17,7 +17,7 @@ git init
 
 touch .vimrc
 git add .vimrc
-gitgit  commit -m 'Initial revision'
+git commit -m 'Initial revision'
 ```
 
 this can be done all in one line
@@ -26,8 +26,15 @@ this can be done all in one line
 git add git.md ; git commit -m 'more' ; git push
 ```
 
+## setup reposity on github before proceeding
 
-setup reposity on github before proceeding - dotfiles
+- login to github
+- go to repositories
+- select 'New'  ( green box in upper right corner )
+- repository name: diotfiles
+- description: optional
+- private
+- select 'Create repository'  ( green box near bottom of page )
 
 ```sh
 git remote add dotfiles git@github.com:myridonn/dotfiles.git
