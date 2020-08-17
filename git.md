@@ -9,7 +9,6 @@ cat ~/.ssh/id_rsa.pub
 - login to github
 
 add ssh key
-
 - goto settings
 - select 'SSH and GPG keys'
 - select 'New SSH key'
@@ -18,7 +17,6 @@ add ssh key
 - select 'Add SSH key'
 
 add repository
-
 - go to repositories
 - select 'New'  ( green box in upper right corner )
 
