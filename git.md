@@ -1,4 +1,4 @@
-# notes for setting up git(hub)
+# git notes
 begin the process on the github site.  once you have added your ssh public key and created the initial repository, you can clone it to your local device
 
 ## setup github
