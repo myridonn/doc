@@ -1,7 +1,42 @@
 # notes for setting up git/github
 
-setup global varaibles
+### create ssh public key
+```sh
+cat ~/.ssh/id_rsa.pub
+```
 
+### setup github
+- login to github
+
+add ssh key
+
+- goto settings
+- select 'SSH and GPG keys'
+- select 'New SSH key'
+- Title: enter hostname and/or username
+- Key: copy the entire text of the public key
+- select 'Add SSH key'
+
+add repository
+
+- go to repositories
+- select 'New'  ( green box in upper right corner )
+
+	- repository name: dotfiles
+	- description: optional
+	- select radio button 'private'
+	- select checkbox 'Initialize this repository with a README'
+	- select 'Create repository'  ( green box near bottom of page )
+
+- select 'Code'  ( green box in middle of screen )
+- select clipboard icon to right of 'git@github.com' string
+
+### on your local device
+
+```sh
+git clone
+
+setup global variables
 ```sh
 git config --global user.name myridonn
 git config --global user.email myridonn@gmail.com
@@ -20,25 +55,16 @@ git add .vimrc
 git commit -m 'Initial revision'
 ```
 
+setup ssh key access
+```sh
+git remote add dotfiles git@github.com:myridonn/dotfiles.git
+git push -u dotfiles master
+```
+
 this can be done all in one line
 
 ```sh
 git add git.md ; git commit -m 'more' ; git push
-```
-
-## setup reposity on github before proceeding
-
-- login to github
-- go to repositories
-- select 'New'  ( green box in upper right corner )
-- repository name: diotfiles
-- description: optional
-- private
-- select 'Create repository'  ( green box near bottom of page )
-
-```sh
-git remote add dotfiles git@github.com:myridonn/dotfiles.git
-git push -u dotfiles master
 ```
 
 -------------------------------------------------------------------------------
