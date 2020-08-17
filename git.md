@@ -40,20 +40,20 @@ cd ~/git
 git clone git@github.com:myridonn/process.git
 ```
 
-> to create a new repository
+### to create a new repository
 ```sh
 # create and initialize directory
 mkdir ~/dotfiles
 cd ~/dotfiles
 git init
 ```
-create new file
+> create new file
 ```sh
 touch .vimrc
 git add .vimrc
 git commit -m 'Initial revision'
 ```
-push file to github
+> push file to github
 ```sh
 git remote add dotfiles git@github.com:myridonn/dotfiles.git
 git push -u dotfiles master
